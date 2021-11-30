@@ -31,7 +31,7 @@ imglist = subprocess.run(['gsutil', 'ls', f'{base_cloud_path.strip("/")}/*.tif']
 
 # dryrun prints the command that will be called to upload each file if True,
 # and runs commands if False.
-dryrun = False
+dryrun = True
 
 
 for img in imglist:
